@@ -2,6 +2,12 @@
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
+<p align="center"> 
+  <a href="https://igor-v-santana.github.io/Stats-preview-card/">Site do Projeto</a> /
+  <a href="https://www.linkedin.com/in/igor-santanaa/">Contato</a>
+</p>
+
+
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
