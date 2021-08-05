@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(233, 47%, 7%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
+    height: 50%;
+    display: flex;
+}
+
+
+.container-left{
+    background: hsl(244, 38%, 16%);
+    width: 55%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+
+/*********** RIGHT **************/
+.container-right{
+    background: hsl(277, 68%, 39%);
+    width: 45%;
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.container-right img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+
+/********** LEFT **************/
+.container-left-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    color: hsl(0, 0%, 100%);
+}
+.container-left-text h1{
+    font-size: 2.5em;
+    font-family: 'Lexend Deca', sans-serif;
+}
+.container-left-text h2{
+    font-size: 2.5em;
+    font-family: 'Lexend Deca', sans-serif;
+    position: relative;
+    right: .3em;
+}
+.container-left-text .purple{
+    color: hsl(277, 64%, 61%);
+}
+.container-left-text2{
+    margin-top: 2em;
+}
+.container-left-text 
+.container-left-text2 p{
+    margin-top: .5em;
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: 1.1em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    position: relative;
+}
+.container-left-footer{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    left: 7%;
+}
+
+.container-left-footer h3{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.4em;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: .2em;
+}
+.container-left-footer span{
+    color: hsla(0, 0%, 100%, 0.6);
+    font-size: .8em;
+    font-family: 'Lexend Deca', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+
+
+ 
+
+
+/**************** RESPONSIVO *******************/
+
+@media(max-width: 1380px){
+    .container{
+        width: 90%;
+    }
+    .container-left-text h1{
+        font-size: 1.5em;
+    }
+    .container-left-text h2{
+        font-size: 1.5em;
+    }
+    .container-left-text2{
+        font-size: .8em;
+        text-align: center;
+    }
+    .container-left-footer h3{
+        font-size: 1.2em;
+    }
+    .container-left-footer span{
+        font-size: .7em;
+    }
+}
+
+
+@media (max-width: 1300px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 90%;
+    }
+    .container-right{
+        width: 100%;
+        height: 40%;
+    }
+    .container-left{
+        width: 100%;
+        height: 60%;
+    }
+    .container-left-text h1{
+        font-size: 2.5em;
+    }
+    .container-left-text h2{
+        font-size: 2.5em;
+    }
+    .container-left-text2{
+        font-size: 1em;
+    }
+}  
+@media(max-width: 695px){
+    .container-left-text h1{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .container-left-text h2{
+        font-size: 1.3em;
+        text-align: center;
+    }
+    .container-left-text2{
+        font-size: .6em;
+        display: inline;
+    }
+    .container-left-footer h3{
+        font-size: 1em;
+    }
+    .container-left-footer span{
+        font-size: .5em;
+    }
+    
+}
+
+
+@media(max-width: 430px){
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 90%;  
+    }
+    .container-right{
+        height: 30%;
+        width: 90%;
+        border-radius: 0;
+    }
+    .container-left{
+        width: 90%;
+        height: 70%;
+        border-radius: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .container-right img{
+        background: url(images/image-header-mobile.jpg);
+        width: 100%;
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container-left-text{
+        display: flex;
+        justify-content: flex-start;
+        height: 50%;
+    }
+    .container-left-text h1{
+        font-size: 1.4em;
+        margin-top: 1.1em;
+        text-align: center;
+    }
+    .container-left-text h2{
+        font-size: 1.4em;
+        text-align: center;
+    }
+    .container-left-text2{
+        text-align: center;
+        font-size: .8em;
+        width: 90%;
+    }
+    .container-left-text2 p{
+        display: inline;
+    }
+    .container-left-footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3em;
+        text-align: center;
+    }
+    .container-left-footer h3{
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    .container-left-footer span{
+        font-size: .7em;
+    }
+}
